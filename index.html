@@ -5,22 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi emprendimiento</title>
+    <!--googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font awesome v5.5.0-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
+    <!--Fichero CSS3-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="">
-      <nav></nav>
-      <div class="imagen">
-        <img src="" alt="">
-      </div>
+<!--Container-->
+    <div class="container-grid col-12">
+
+<!--Navbar-->
+      <nav class="nav col-12">
+        <a class="nav__logo" href="#"><img src="assets/img/logo.svg" alt=""></a>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars"></i></label>
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li> <a href="#">Acerca de</a> </li>
+                <li> <a href="#">Cursos</a> </li>
+                <li> <a href="#">Precios</a> </li>
+            </ul>
+          </div>
+      </nav>
+ <!--Header-->     
+      <header class="hero-section">
+        <div class="hero__img">
+          <img class="img1" src="assets/img/desarrolloweb2021t.svg" alt="...">
+        </div>
+      </header>
+<!--Contenido 1-->      
       <section class="contenido1">
-
+          <article class="article1">
+              <img class="article1__img" src="assets/img/html-y-cssb-.jpg" alt="...">
+              <h1>HTML y CSS para principiantes.</h1>
+              <p>HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo sobre HTML y CSS, desde lo baásico hasta un nivel intermedio, logrando desarrollar tu primera página web responsiva, sin la necesidad de aplicar librerías extrernas para CSS</p>
+              <h3>Instructor: Manuel Gónzalez</h3>
+              <div class="article1__iconos">
+                <i class="far fa-thumbs-up"> 1 </i>
+                <i class="far fa-comments"> 9 </i>
+                <i class="far fa-eye"> 9 </i>
+                <i class="fas fa-share-alt"> 0 </i>
+              </div>
+          </article>
+         
+          <article class="article2">
+            <img class="article2__img" src="assets/img/sass.png" alt="..." >
+            <h1>Estilos con SASS.</h1>
+            <p>SASS es una herramienta importante hoy en dia para todo desarrollador web, ya que permite crear estilos mas ordenados, eficientes y con menos lineas de código. Por ello, en este curso aprenderás todo lo necesario para crear hojas de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS.</p>
+            <h3>Instructor: Manuel Gónzalez</h3>
+            <div class="article2__iconos">
+              <i class="far fa-thumbs-up"> 1 </i>
+              <i class="far fa-comments"> 9 </i>
+              <i class="far fa-eye"> 8 </i>
+              <i class="fas fa-share-alt"> 5 </i>
+            </div>
+          </arcticle>
       </section>
-      <section class="contenido2"></section>
-      <footer class="footer"></footer>
+<!--Contenido 2-->
+      <section class="contenido2">
+<!--article 3-->         
+        <article class="article3">
+          <div class="article3__img">
+          <img  src="assets/img/web-development.png" alt="...">
+        </div>
+          <h3>CURSOS 2020LTDA</h3>
+          <div class="article3__iconos">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i clas__titulos="fab fa-github"></i>
+          </div>
+          <div class="article3__parrafo">
+          <p >Cursos 2020 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo desde lo más básico de HTML yCSS, hasta lo más complejo con SASS y JavaScript. Igualmente se ofrecen cursos más especializados para BackEnd, implementación de frameworks para frontEnd, entre otros </p>
+        </div>
+         
+            <h2 class="article3__titulo">Más Cursos</h2>
+          
+          <ul class="article3__lista">
+           <li> <a href="#">Analitica Web (3)</a></li>
+           <li><a href="#">Diseño Web (4)</a></li>
+           <li><a href="#">Desarrollo BackEnd (9)</a></li>
+           <li><a href="#">Seguridad informática (14)</a></li>
+           <li><a href="#">Social Media (7)</a></li>
+           <li><a href="#">SEO (8)</a></li>
+           <li><a href="#">UI/UX (3)</a></li>
+           <li><a href="#">JavaScript (5)</a></li>
+           <li><a href="#">VueJS (1)</a></li>
+          </div>
+        </article>
+        <div class="animacion">
 
+        </div>
+      </section>
+<!--Footer-->      
+    <footer class="footer">
+      <div class="footer__copy">
+        <h4> <span><i class="far fa-copyright"></i></span> 2021 | Todos los derechos reservados.</h4>
+      </div>
+      <div class="footer__nav">
+        <ul class="footer__lista">
+          <li> <a href="#">Legal</a> </li>
+          <li> <a href="#">Sobre Anuncios</a> </li>
+        </ul>
+        <form action="" class="footer__form">
+          <input type="email" class="footer__input"  placeholder="e-mail"> 
+          <button class="footer__button">Enviar</button>     
+        </form>
+      </div>
+    </footer>
+    
 
 
     </div>

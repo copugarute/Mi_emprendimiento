@@ -1,0 +1,43 @@
+.footer{
+    height:auto;
+    background-color: nth($lista1, 1) ;
+    display: block;
+
+    &__copy{
+        color: $white;
+        text-align: center;
+        padding-top: 50px ;
+    }
+
+    &__nav{
+        padding-top: 30px;
+    }
+    &__nav li{
+        
+        text-align: center;
+        
+
+        a{
+            color: $white;
+            list-style: none;
+            text-decoration: none;
+        }
+    }
+    &__form{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    &__input{
+        width: 150px;
+        height: 30px;
+        border-radius: 4px;
+    }
+      
+    &__button{
+        display: block;
+        
+    }
+
+
+}
