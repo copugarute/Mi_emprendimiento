@@ -415,56 +415,81 @@ body {
     grid-column: span 1;
   }
 }
-.nav {
-  display: flex;
-  height: 80px;
-  background-color: #000000;
-  padding: 20px;
+#btn-menu {
+  display: none;
 }
-.nav img {
-  height: 60px;
-  width: 60px;
+
+.nav {
+  background-color: #000000;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  padding-top: 20px;
+  padding-left: 60px;
+  display: block;
+}
+.nav__logo img {
+  width: 4rem;
+  height: 4rem;
 }
 .nav label {
-  display: block;
-  width: 30px;
-  height: 30px;
+  font-size: 30px;
+  display: none;
   padding: 10px;
   color: #FFFFFF;
-  font-size: 30px;
-  justify-content: flex-end;
-  margin-left: auto;
 }
 .nav label:hover {
   cursor: pointer;
   color: #FFAF6D;
 }
-.nav #btn-menu:checked ~ .nav__menu {
-  margin-left: 0;
-}
-.nav #btn-menu {
-  display: none;
-}
-.nav .nav__menu {
-  display: block;
-  width: 70%;
-}
-.nav .nav__list {
-  position: absolute;
-  background-color: #060606;
-  flex-direction: column;
-  margin-left: -70%;
-  transition: all 0.5s;
-}
-.nav .nav__list li {
-  border: 1px solid #FFFFFF;
+.nav__menu ul {
+  margin: 0;
   list-style: none;
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
 }
-.nav .nav__list li a {
+.nav__menu li:hover {
+  background-color: #FFA500;
+  border-radius: 4px;
+}
+.nav__menu li a {
   display: block;
   padding: 15px 20px;
   color: white;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .nav label {
+    padding-right: 50px;
+    padding-top: 30px;
+    display: block;
+  }
+  .nav .nav__menu {
+    position: absolute;
+    background: #FFFFFF;
+    width: 70%;
+    margin-top: 95px;
+    margin-left: -70%;
+    transition: all 0.6s;
+    border: 2px solid #000;
+  }
+  .nav__menu ul {
+    flex-direction: column;
+  }
+  .nav__menu li {
+    border-top: 1px solid #000;
+    color: #000;
+  }
+  .nav__menu li a {
+    color: #000;
+  }
+  .nav #btn-menu:checked ~ .nav__menu {
+    margin-left: 0;
+  }
 }
 
 .hero-section {
@@ -552,20 +577,28 @@ body {
 }
 
 .footer {
-  height: auto;
+  height: 80px;
   background-color: #000000;
-  display: block;
+  display: flex;
+  justify-content: space-around;
 }
 .footer__copy {
+  display: flex;
   color: #FFFFFF;
-  text-align: center;
-  padding-top: 50px;
+  align-items: center;
+  justify-self: center;
 }
 .footer__nav {
-  padding-top: 30px;
+  display: inline-flex;
+  padding-left: 60px;
+  align-items: center;
+}
+.footer__lista {
+  display: inline-flex;
+  list-style: none;
 }
 .footer__nav li {
-  text-align: center;
+  padding-left: 40px;
 }
 .footer__nav li a {
   color: #FFFFFF;
@@ -573,17 +606,34 @@ body {
   text-decoration: none;
 }
 .footer__form {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .footer__input {
   width: 150px;
   height: 30px;
   border-radius: 4px;
 }
+.footer__input:focus {
+  background-color: #FFAF6D;
+}
 .footer__button {
-  display: block;
+  width: 50px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #FFAF6D;
+}
+.footer__button:hover {
+  background-color: #FFFFFF;
+}
+
+.animacion {
+  display: solid;
+  margin: 50px;
+}
+.animacion__svg {
+  width: 400px;
+  height: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
