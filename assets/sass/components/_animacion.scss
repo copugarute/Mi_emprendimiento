@@ -1,9 +1,26 @@
 .animacion{
-    display: solid;
-    margin: 50px;
+    display: flexbox;
+   
     
-    &__svg{
-        width: 400px;
-        height: 400px;
+    .animacion__container{
+        display: flex;
+       justify-content: center;
+       padding-top: 100px;
+       padding-bottom: 100px;
+    }
+
+    .rueda{
+        animation-name: rotacion;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        transform-origin: 80% 80%
+    }
+
+    .codigo{
+        animation-name: mover;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 }
