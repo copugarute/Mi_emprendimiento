@@ -1,29 +1,29 @@
 @mixin vista-sm{
-    @media screen and (max-width:600px){
+    @media screen and (min-width:$sm){
         @content;
     }
 }
 
 @mixin vista-md{
-    @media screen and (max-width:768px){
+    @media screen and (max-width:$md){
         @content;
     }
 }
 
 @mixin vista-lg{
-    @media screen and (max-width:992px){
+    @media screen and (max-width:$lg){
         @content;
     }
 }
 
 @mixin vista-xl{
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:$xl){
         @content;
     }
 }
 
 @mixin vista-xxl{
-    @media screen and (max-width:1400px){
+    @media screen and (max-width:$xxl){
         @content;
     }
 }

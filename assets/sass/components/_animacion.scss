@@ -23,4 +23,11 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
+
+    @media (max-width: 800px){
+        .animacion__svg{
+            height: 400px;
+            width: 400px;
+        }
+    }
 }
